@@ -1,11 +1,13 @@
 import CPU
 import MemoryControll
+import FileControll
 
 def DisplayMenu():
     print("""
 1: CPU
 2: RAM
-3: Exit
+3: Save into file
+4: Exit
     """)
     menuItem = input("Choose menu item: ")
     if(menuItem == "1"):
@@ -14,5 +16,7 @@ def DisplayMenu():
        
     elif (menuItem == "2"):
         MemoryControll.printMemoryUsage()
-    else:
-        print("Closing program")
+    elif (menuItem == "3"):        
+        FileControll.SaveLogFile()
+    else :
+        print("Closing system!")
