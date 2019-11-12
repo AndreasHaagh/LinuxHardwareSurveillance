@@ -1,4 +1,5 @@
 import CPU
+import MemoryControll
 
 def DisplayMenu():
     print("""
@@ -10,5 +11,8 @@ def DisplayMenu():
     if(menuItem == "1"):
         print("")
         CPU.printCpuUsage()
-    if (menuItem == "2"):
-    
+       
+    elif (menuItem == "2"):
+        MemoryControll.printMemoryUsage()
+    else:
+        print("Closing program")

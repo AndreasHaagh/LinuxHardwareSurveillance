@@ -1,4 +1,6 @@
+import psutil
+
 #Showing memory usage 
 def printMemoryUsage():
-    print ('Memory:')
+    print ('\n Memory:')
     print(psutil.virtual_memory())
