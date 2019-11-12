@@ -10,3 +10,5 @@ def DisplayMenu():
     if(menuItem == "1"):
         print("")
         CPU.printCpuUsage()
+    if (menuItem == "2"):
+    

@@ -24,6 +24,9 @@
     <Compile Include="CPU.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MemoryControll.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Menu.py">
       <SubType>Code</SubType>
     </Compile>
