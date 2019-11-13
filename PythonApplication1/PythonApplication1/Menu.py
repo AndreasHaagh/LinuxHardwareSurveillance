@@ -1,6 +1,9 @@
 import CPU
 import MemoryControll
 import FileControll
+import sys
+
+isRunning = False
 
 def DisplayMenu():
     print("""
@@ -10,7 +13,7 @@ def DisplayMenu():
 4: Exit
     """)
     menuItem = input("Choose menu item: ")
-    if(menuItem == "1"):
+    if (menuItem == "1"):
         print("")
         CPU.printCpuUsage()
        
@@ -18,5 +21,9 @@ def DisplayMenu():
         MemoryControll.printMemoryUsage()
     elif (menuItem == "3"):        
         FileControll.SaveLogFile()
-    else :
+    elif (menuItem == "4"):
+        isRunning = False
         print("Closing system!")
+        sys.exit(0)
+    else:
+        print("\nError: invaild input")
