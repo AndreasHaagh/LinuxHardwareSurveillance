@@ -56,7 +56,7 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Save data logs
-SavedLogs.txt
+.PythonApplication1/PythonApplication1/SavedLogs.txt
 
 # Unit test / coverage reports
 htmlcov/
