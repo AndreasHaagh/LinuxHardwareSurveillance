@@ -1,9 +1,8 @@
 import CPU
 import MemoryControll
 import FileControll
-import sys
 
-isRunning = False
+isRunning = True
 
 def DisplayMenu():
     print("""
@@ -22,8 +21,8 @@ def DisplayMenu():
     elif (menuItem == "3"):        
         FileControll.SaveLogFile()
     elif (menuItem == "4"):
+        global isRunning
         isRunning = False
         print("Closing system!")
-        sys.exit(0)
     else:
         print("\nError: invaild input")

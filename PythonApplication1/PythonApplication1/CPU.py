@@ -13,6 +13,5 @@ def printCpuUsage():
     else:
         print("The loop has ended")
 
-#Only works on Linux
 #percentage = [x / psutil.cpu_count() * 100 for x in psutil.getloadavg()]
 #print(percentage)
