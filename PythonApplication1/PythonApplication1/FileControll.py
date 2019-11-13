@@ -3,7 +3,7 @@ import datetime
 
 #Function to save some data into the file in the current project folder
 def SaveLogFile(data):
-    print('saving data into the file')
+    #print('saving data into the file')
 
     #path = '/home/user01/projects/HardwareSurveillance'    
     #os.makedirs('/home/user01/projects/HardwareSurveillance/SavedLogs')
