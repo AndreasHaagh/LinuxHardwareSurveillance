@@ -7,12 +7,12 @@ def SaveLogFile():
 
     #path = '/home/user01/projects/HardwareSurveillance'    
     #os.makedirs('/home/user01/projects/HardwareSurveillance/SavedLogs')
-
-    x = datetime.datetime.now() #tracking the time of log saving
-    x = x.strftime("%c")
-    data = "\n Logs from date: " + x
-    print(data)
+    global data
+    time = datetime.datetime.now() #tracking the time of log saving
+    time = time.strftime("%c")
+    dataLog = "\n Logs from date: " + time + data
+    print(dataLog)
     f = open("SavedLogs.txt", "a")
-    f.write(data)
+    f.write(dataLog)
     
     f.close()
