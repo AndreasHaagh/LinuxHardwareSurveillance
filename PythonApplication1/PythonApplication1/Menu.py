@@ -3,12 +3,12 @@ import MemoryControll
 import FileControll
 
 isRunning = True
-
+data = 'data log'
 def DisplayMenu():
     print("""
 1: CPU
 2: RAM
-3: Save into file
+3: Read Log file
 4: Exit
     """)
     menuItem = input("Choose menu item: ")
@@ -19,7 +19,7 @@ def DisplayMenu():
     elif (menuItem == "2"):
         MemoryControll.printMemoryUsage()
     elif (menuItem == "3"):        
-        FileControll.SaveLogFile()
+        FileControll.ReadLogFile()
     elif (menuItem == "4"):
         global isRunning
         isRunning = False

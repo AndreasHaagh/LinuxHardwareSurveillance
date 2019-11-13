@@ -10,5 +10,5 @@ def printMemoryUsage():
     print('Used: ', memory, 'MB')
     memory = psutil.virtual_memory().free >> 20
     print('Free: ', memory, 'MB')
-    data = psutil.virtual_memory()
-    FileControll.SaveLogFile()
+    data = str(psutil.virtual_memory())
+    FileControll.SaveLogFile(data)
