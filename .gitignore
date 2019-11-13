@@ -55,6 +55,9 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+# Save data logs
+.PythonApplication1/PythonApplication1/SavedLogs.txt
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -157,3 +160,5 @@ API
 Training
 Blog
 About
+
+*.txt
