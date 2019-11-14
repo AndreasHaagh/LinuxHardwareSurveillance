@@ -3,8 +3,9 @@ import FileControll
 
 def printCpuUsage():
     print("Seconds the cpu spent on each mode")
-    print(psutil.cpu_times())
-    timesData = str(psutil.cpu_times())
+    cpuTimes = psutil.cpu_times()
+    print(cpuTimes)
+    timesData = str(cpuTimes)
     FileControll.SaveLogFile(timesData)
 
     index = 0
