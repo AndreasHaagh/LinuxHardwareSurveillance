@@ -8,9 +8,9 @@ import FileControll
     expressed in bytes.
 """
 def printMemoryUsage():
-    print ('\n Memory:')
-    data = psutil.virtual_memory()
-    print(data) # printing named tuple
+    print ('\n System Memory Statistics:')
+    data = psutil.virtual_memory()    
+    print(data) # printing named tuple    
     #printing received information in human readable format
     #Total physical memory in MB
     memory = data.total >> 20
@@ -25,4 +25,11 @@ def printMemoryUsage():
     # via casting into the string format and
     #calling SaveLogFile function from FileControll
     data = str(data)
-    FileControll.SaveLogFile(data)
+    FileControll.SaveLogFile("System Memory: " + data)
+    #Swap memory statistics
+    data1 = psutil.swap_memory()
+    print("\n System Swap Memory Statistics: ")
+    print(data1)#printing named tuple
+    data1=str(data1)
+    #calling SaveLogFile function from FileControll
+    FileControll.SaveLogFile("Swap Memory: " + data1)
